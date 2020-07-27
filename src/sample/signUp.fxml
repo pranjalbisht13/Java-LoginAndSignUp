@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="AnchorPane1"  prefHeight="435.0" prefWidth="500.0"
+            xmlns:fx="http://javafx.com/fxml" fx:controller="sample.SignUpController">
+
+    <Text text="User Name " layoutX="15.0" layoutY="105.0" ></Text>
+    <TextField fx:id="textFieldName" layoutX="105.0" layoutY="85.0" prefHeight="31.0" prefWidth="218.0" promptText="User Name" />
+
+    <Text text=" Password " layoutX="15.0" layoutY="145.0" ></Text>
+    <PasswordField fx:id="textFieldIPass" layoutX="105.0" layoutY="125.0" prefHeight="31.0" prefWidth="218.0" promptText="Password" />
+
+    <Text text="Confirm Pwd " layoutX="15.0" layoutY="195.0" ></Text>
+    <PasswordField fx:id="textFieldIConfPass" layoutX="105.0" layoutY="175.0" prefHeight="31.0" prefWidth="218.0" promptText="Confirm Password" />
+
+    <Text text="Email ID " layoutX="15.0" layoutY="240.0" ></Text>
+    <TextField fx:id="textFieldIEmail" layoutX="105.0" layoutY="215.0" prefHeight="31.0" prefWidth="218.0" promptText="Email Address" />
+
+<!--    <DatePicker fx:id="TextFieldDOB" layoutX="35.0" layoutY="255.0" promptText="Date Of Birth" />-->
+
+<!--    <TextField fx:id="textFieldIAddress" layoutX="35.0" layoutY="295.0" prefHeight="31.0" prefWidth="218.0" promptText="Address" />-->
+
+    <Label layoutX="75.0" layoutY="13.0" prefWidth="272.0" text="SIGN UP !!" textFill="#1300bf">
+        <font>
+            <Font name="Arial Rounded MT Bold" size="30.0" />
+        </font>
+    </Label>
+    <Button  fx:id="registerButton" text="Submit"   layoutX="75.0" layoutY="275.0"
+             GridPane.halignment="CENTER" onAction="#register"/>
+    <Button  fx:id="loginNow" text=" New User Login  "   layoutX="145.0" layoutY="275.0"
+             GridPane.halignment="CENTER" onAction="#login1"/>
+
+</AnchorPane>
+
+
